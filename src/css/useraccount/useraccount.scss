@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+$orange: #DA7143;
+$lightblack: #151515;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 1440px;
+  font: 100% "Montserrat", sans-serif;
+  background: linear-gradient(to bottom, #ffffff 0%, #DA7143);
+}
+
+
+.container {
+  width: 1440px;
+  padding-left: 167px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+//Стили для шапки профиля//
+.header
+{
+    &_title {
+        width: 1109px;
+        height: 91px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_name {
+        height: 20px;
+        width: 299px;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        color: black;
+    }
+    &_btn {
+        width: 213px;
+        height: 33px;
+        border-radius: 69px;
+        background-color: #DA7143;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: white;
+            color: black;
+            border: black 1px solid;
+        }
+    }
+}
+//Стили для информации профиля//
+.information {
+    width: 948px;
+    height: 351px;
+    border-radius: 69px;
+    background-color: #151515;
+    margin-top: 66px;
+    margin-left: 246px;
+    margin-right: 246px;
+    &_line-1 {
+        height: 78px;
+        width: 902px;
+        padding-top: 36px;
+        padding-left: 43px;
+        display: flex;
+        gap: 95px;
+        align-items: center;
+    }
+    &_item {
+        height: 78px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    &_text {
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+    &_name {
+        font-weight: 600;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+    &_line-2 {
+        margin-top: 62px;
+        margin-left: -13px;
+    }
+}
+.abonements_blocks{
+    width: 948px;
+    height: 204px;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:12px;
+    margin-left: 230px;
+    &_value {
+        width: 308px;
+        height: 204px;
+        background-color:#151515;
+        border-radius: 69px;
+
+    }
+    &_value-p {
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+    }
+    &_value-h1 {
+        font-weight: 800;
+        font-size: 40px;
+        color: white;
+        text-align: center;
+    }
+}
+.line_1 {
+    &_-1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 27px;
+    }
+    &_-2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+.btn {
+    &_month {
+        margin-top: 22px;
+    }
+    &_admin {
+            width: 217px;
+            height: 54px;
+            background-color: #151515;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 69px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            margin-top: 137px;
+            margin-left: 1057px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 55px;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+    }
+}
+.button {
+    width: 152px;
+    height: 36px;
+    background-color: #DA7143;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    margin-left: 78px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+    &:hover {
+        background-color: #ffffff;
+        color: black;
+    
+    }
+}

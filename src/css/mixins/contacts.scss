@@ -1,0 +1,130 @@
+.contacts {
+    height: 524px;
+    background-color: #151515;
+    &_information {
+        width: 425px;
+        height: 242px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &_block {
+        width: 959px;
+        height: 242px;
+        padding-left: 71px;
+        padding-top: 309px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 128px;
+    }
+    &_title{
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &_adress {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        color: #FFFFFF;
+        width: 396px;
+        height: 48px;
+    }
+    &_email {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &_phone {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: #FFFFFF;
+        width: 425px;
+        height: 29px;  
+    }
+    &_title-question {
+        font-size: 40px;
+        font-weight: 800;
+        color: #FFFFFF;
+        padding-top: 97px;
+        padding-left: 333px;
+    }
+    &_block {
+        padding-top: 67px;
+    }
+}
+@media all and (max-width: 440px) {
+    body {
+        width: 440px;  
+    }
+    .container {
+        padding-left:49px;
+        width: 440px;
+    }
+.contacts {
+    height: 338px;
+    background-color: #151515;
+    &_information {
+        width: 317px;
+        height: 217px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &_block {
+        width: 317px;
+        height: 217px;
+        padding-left: 13px;
+        padding-top: 53px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+    &_title{
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &_adress {
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        align-items: center;
+        color: #FFFFFF;
+        width: 317px;
+        height: 40px;
+    }
+    &_email {
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &_phone {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        color: #FFFFFF;
+        width: 213px;
+        height: 24px;  
+        padding-left: 50px;
+    }
+    &_title-question {
+        font-size: 20px;
+        font-weight: 800;
+        color: #FFFFFF;
+        padding-top: 39px;
+        padding-left: 61px;
+    }
+    &_block {
+        padding-top: 53px;
+    }
+}
+}

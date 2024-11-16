@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+h1 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-weight: 800;
+  font-size: 24px;
+  color: #DA7143;
+  margin-top: 35px;
+}
+
+body {
+  background-color: #000000;
+  font: 100% "Montserrat", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribeForm {
+    width: 666px;
+    height: 590px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #151515;
+    border-radius: 69px;
+    margin-bottom: 30px;
+  }
+  input {
+    width: 230px;
+    height: 33px;
+    background-color: #E4E4E4;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-left: 52px;
+    margin-right: 52px;
+    cursor: pointer;
+  }
+  label {
+    color: white;
+    font-weight: 600;
+  }
+  select {
+    width: 230px;
+    height: 33px;
+    background-color: #E4E4E4;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-left: 52px;
+    margin-right: 52px;
+    cursor: pointer;
+  }
+button {
+    width: 160px;
+    height: 40px;
+    background-color: #DA7143;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    transition: all 0.3s ease;
+    font: 100% "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom:40px ;
+
+  }
+button:hover {
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+  }
+  .abonements_title {
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+    margin-top: 102px;
+  }
+  .abonements_text {
+    width: 425px;
+    height: 58px;
+    margin-top: 45px;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .abonements_blocks {
+    width: 1110px;
+    height: 493px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 63px;
+    margin-bottom: 87px;
+    margin-left: 150px;
+  }
+  .abonements_blocks_value {
+    width: 328px;
+    height: 450px;
+    background-color: #151515;
+    border-radius: 69px;
+  }
+  .abonements_blocks_value-p {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+  .abonements_blocks_value-h1 {
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+  .abonements_blocks_value-p-semibold {
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .button {
+    width: 160px;
+    height: 57px;
+    background-color: #DA7143;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    margin-left: 84px;
+    margin-top: 97px;
+    transition: all 0.3s ease;
+  }
+  .button:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .line_1_-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .line_1_-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+  }
+  .line_1_-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+  }
+  .line_1_-4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  .line_1_-5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  .line_1_-6 {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  
+  .btn_year {
+    margin-top: 50px;
+  }
+  .btn_month {
+    margin-top: 108px;
+  }
+  .btn_lesson {
+    margin-top: 167px;
+  }
+  
+  .line_2_-1 {
+    margin-top: 78px;
+  }
+  .line_2_-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 47px;
+  }
+  /*# sourceMappingURL=subscribe.css.map */
+  
+  

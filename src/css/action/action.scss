@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1440px;
+    font: 100% "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+  //Стили для панели редактирования данных//
+  .form_action {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+  }
+.button {
+        background-color: rgb(75, 179, 14);
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 15px;
+        background-color: rgb(75, 179, 14);
+        color: white;
+        text-decoration: none;
+        border-radius: 69px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        font: 100% "Montserrat", sans-serif;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+     &:hover {
+        background-color: white;
+        color: black;
+   
+    }
+}
+a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 15px;
+        background-color: #DA7143;
+        color: white;
+        text-decoration: none;
+        border-radius: 69px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        font: 100% "Montserrat", sans-serif;
+        font-weight: 600;
+        border: none;
+     &:hover {
+        background-color: white;
+        color: black;
+   
+    }
+}
+    .input {
+        border-radius: 40px;
+        border: 1px solid black;
+        height: 30px;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 500;
+    }
+    h1 {
+        padding-bottom: 30px;
+        font-weight: 800;
+    }

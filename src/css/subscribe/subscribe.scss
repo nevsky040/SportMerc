@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+$primary-bg-color: #000000;
+$accent-color: #DA7143;
+$hover-bg-color: #ffffff;
+$hover-text-color: black;
+$input-bg-color: #E4E4E4;
+$form-bg-color: #151515;
+$border-radius: 69px;
+$font-size-large: 40px;
+$font-size-medium: 24px;
+$font-size-small: 20px;
+
+body {
+  background-color: $primary-bg-color;
+  font: 100% "Montserrat", sans-serif;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  color: $accent-color;
+  font-weight: 800;
+  font-size: $font-size-medium;
+  margin-top: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//Стили для формы по оформлению тарифа//
+.subscribeForm {
+  width: 666px;
+  height: 590px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: $form-bg-color;
+  border-radius: $border-radius;
+  margin-bottom: 30px;
+
+  input,
+  select {
+    width: 230px;
+    height: 33px;
+    background-color: $input-bg-color;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-left: 52px;
+    margin-right: 52px;
+    cursor: pointer;
+  }
+
+  label {
+    color: white;
+    font-weight: 600;
+  }
+}
+
+button {
+  width: 160px;
+  height: 40px;
+  background-color: $accent-color;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  transition: all 0.3s ease;
+  font: 100% "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+
+  &:hover {
+    background-color: $hover-bg-color;
+    color: $hover-text-color;
+    cursor: pointer;
+  }
+}
+
+.abonements_title {
+  font-size: $font-size-large;
+  font-weight: 800;
+  color: black;
+  margin-top: 102px;
+}
+
+.abonements_text {
+  width: 425px;
+  height: 58px;
+  margin-top: 45px;
+  font-size: $font-size-medium;
+  font-weight: 600;
+  color: black;
+}
+
+.abonements_blocks {
+  width: 1110px;
+  height: 493px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 63px;
+  margin-bottom: 87px;
+  margin-left: 150px;
+
+  .abonements_blocks_value {
+    width: 328px;
+    height: 450px;
+    background-color: $form-bg-color;
+    border-radius: $border-radius;
+
+    &-h1 {
+      font-weight: 800;
+      font-size: $font-size-large;
+      color: white;
+      text-align: center;
+    }
+
+    &-p,
+    &-p-semibold {
+      font-weight: 600;
+      font-size: $font-size-small;
+      color: white;
+
+      &-semibold {
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+.button {
+  width: 160px;
+  height: 57px;
+  background-color: $accent-color;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius;
+  margin-left: 84px;
+  margin-top: 97px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $hover-bg-color;
+    color: $hover-text-color;
+  }
+}
+.line_1_-1,
+.line_1_-2,
+.line_1_-3,
+.line_1_-4,
+.line_1_-5,
+.line_1_-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.line_1_-1 { margin-top: 32px; }
+.line_1_-2 { margin-top: 22px; }
+.line_1_-3 { margin-top: 33px; }
+.line_1_-4 { margin-top: 35px; }
+.line_1_-5 { margin-top: 35px; }
+.line_1_-6 { margin-top: 35px; }
+
+.btn_year { margin-top: 50px; }
+.btn_month { margin-top: 108px; }
+.btn_lesson { margin-top: 167px; }
+
+.line_2_-1 { margin-top: 78px; }
+
+.line_2_-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 47px;
+}

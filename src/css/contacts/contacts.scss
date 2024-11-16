@@ -1,0 +1,249 @@
+@import "../mixins/header.scss"; //Миксины для шапки профиля//
+@import "../mixins/footer.scss"; //Миксины для подвала//
+@import "../mixins/modal.scss"; //Миксины для Модального окна//
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+$orange: #DA7143;
+$lightblack: #151515;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 1440px;
+  font: 100% "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 167px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+.header {
+    &_link {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        gap: 66px;
+        transition: all 0.3s;
+
+        &:hover {
+cursor: pointer;
+color: #DA7143;
+        }
+
+    }
+}
+//Стили для раздела контактов//
+.contacts {
+    height: 927px;
+    background-color: white;
+    &_information {
+        width: 425px;
+        height: 242px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &_block {
+        width: 959px;
+        height: 242px;
+        padding-left: 71px;
+        padding-top: 309px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 128px;
+    }
+    &_title{
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        color: black;
+    }
+    &_adress {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        color: black;
+        width: 396px;
+        height: 48px;
+    }
+    &_email {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+    }
+    &_phone {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: black;
+        width: 425px;
+        height: 29px;  
+    }
+    &_time {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: black;
+        margin-top: 94px;
+        margin-right: 371px;
+    }
+    &_slogan {
+        margin-top: 206px;
+        margin-left:313px;
+    }
+}
+
+.ad {
+    &_information {
+        width: 420px;
+        height: 242px;  
+    }
+    &_title {
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        color: black;
+    }
+    &_email {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+        margin-top: 23px
+    }
+    &_phone {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: black;
+        margin-top: 97px;
+        width: 420px;
+        height: 29px;
+    }
+}
+.map {
+    height: 679px;
+    &_company {
+        margin-top: 21px;
+    }
+}
+.footer {
+    &_networks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 45px;
+        cursor: pointer;
+    }
+}
+//Медиа-запросы для отображения на телефоне//
+@media all and (max-width: 440px) {
+    body {
+        width: 440px;  
+    }
+    .container {
+        padding-left:49px;
+        width: 440px;
+    }
+    .contacts {
+        height: 768px;
+        color: #ffffff;
+
+        &_information {
+            width: 425px;
+            height: 242px;
+            display: flex;
+            gap: 24px;
+            text-align: center;
+            justify-content: center;
+        }
+        &_block {
+            width: 344px;
+            height: 422px;
+            padding-left: 1px;
+            padding-top: 104px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 62px;
+        }
+        &_title{
+            font-size: 20px;
+            color: black;
+        }
+        &_adress {
+            font-size: 16px;
+            height: 40px;
+            color: black;
+        }
+        &_email {
+            font-size: 16px;
+            color: black;
+        }
+        &_phone {
+            font-size: 20px;
+            height: 24px;  
+            color: black;
+        }
+        &_time {
+            font-size: 20px;
+            margin-top: 90px;
+            margin-left: 1px;
+            width: 344px;
+            height: 48px;
+            color: black;
+        }
+        &_slogan {
+            width: 342px;
+            height: 49px;
+            margin-top: 140px;
+            margin-left:1px;
+        }
+    }
+    
+    .ad {
+        &_information {
+            width: 213px;
+            height: 180px;
+        }
+        &_title {
+            font-size: 20px;
+            color: black;
+        }
+        &_email {
+            font-size: 16px;
+            margin-top: 48px;
+            color: black;
+        }
+        &_phone {
+            font-size: 20px;
+            margin-top: 64px;
+            width: 210px;
+            height: 24px;
+            color: black;
+        }
+    }
+    .map {
+        height: 300px;
+        &_company {
+            margin-top: 21px;
+            width: 341px;
+            height: 239px;
+        }
+    }
+}

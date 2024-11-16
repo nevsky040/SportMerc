@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$font-stack:'Montserrat', sans-serif;
+$orange: #DA7143;
+$lightblack: #151515; 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1440px;  
+    font: 100% $font-stack;
+}
+.container {
+    width: 1440px;
+    padding-left: 167px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    &_title{
+        width: 1106px;
+        height: 91px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6px;
+        background-color: $lightblack;
+        padding-left: 167px;
+        padding-right: 167px;
+    }
+    &_ul {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 66px;
+    }
+    &_h1 {
+        font-size: 40px;
+font-weight: 800;
+text-align: center;
+color: #FFFFFF;
+padding-top: 231px;
+    }
+    &_span {
+        font-size: 40px;
+        font-weight: 800;
+        color: #FFFFFF;
+        letter-spacing: 5px;
+    }
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 66px
+}
+.menu-burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 180px;
+
+    span {
+        height: 4px;
+        width: 30px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: all 0.3s;
+    }
+} 
+.menu {
+    &-mobile {
+display: none;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 480px;
+}
+&-mobile-top {
+    list-style: none;
+}
+&-mobile-burger-element {
+    text-align: center;
+    margin-bottom: 15px;
+}
+}
+@media all and (max-width: 440px) {
+    body {
+        width: 440px;  
+    }
+    .container {
+        padding-left:49px;
+        width: 440px;
+    }
+    .header {
+        &_title {
+            width: 440px; // Изменено для адаптивности
+            height: 91px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding-top: 6px; 
+            background-color: $lightblack; 
+            padding-left: 20px; // Изменено для адаптивности
+            padding-right: 20px; // Изменено для адаптивности
+        } 
+            &_h1 {
+                width: 232px;
+                height: 48px;
+        padding-top: 67px;
+        padding-left: 104px;
+        font-size: 20px;
+            }
+            &_ul {
+                display: none;
+                flex-direction: column; // Меню будет вертикальным
+            position: absolute;
+            top: 91px; // Позиционируем под шапкой
+            left: 0;
+            right: 0;
+            background-color: $lightblack; // Фон меню
+            padding: 20px 0; // Отступы
+            z-index: 1000; // Убедитесь, что меню поверх других элементов
+            &:active {
+                display: flex; // Показываем меню
+            }
+            }
+            &_span {
+                font-size: 20px;
+            }
+            &_text {
+                font-size: 16px;
+                padding-top: 36px;
+                text-align: center;
+                width: 275px;
+                height: 100px;
+                padding-left: 83px;
+                padding-top: 27px;
+            }
+        }
+        .burger {
+            display: flex; // Показываем бургер-меню
+        }
+        .logo {
+            width:90px;
+            height: 66px;
+        }
+        .menu-burger {
+            display: flex;
+         }
+         .menu-mobile-top {
+            position: absolute;
+            margin-top: 10px;
+         }
+         .menu-mobile {
+            &.show {
+                position: absolute;
+                display: block;
+                top: 85px;
+                left: 0;
+                width: 148%;
+                height: 440px;
+                z-index: 1;
+                padding-left:130px;
+            }
+            &-link {
+                color: white;
+                font-weight: 600;
+                font-size: 16px;
+                text-decoration: none;
+            }
+         }
+         
+    }

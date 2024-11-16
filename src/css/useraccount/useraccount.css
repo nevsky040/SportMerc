@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 1440px;
+  font: 100% "Montserrat", sans-serif;
+  background-color: black;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 167px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #151515;
+}
+.header_title {
+  width: 1109px;
+  height: 91px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_name {
+  height: 20px;
+  width: 299px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+.header_btn {
+  width: 213px;
+  height: 33px;
+  border-radius: 69px;
+  background-color: #DA7143;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.header_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.information {
+  width: 1110px;
+  height: 561px;
+  border-radius: 69px;
+  margin-left: 167px;
+  backdrop-filter: blur(5px);
+  margin-top: 54px;
+
+  background-color: #151515;
+}
+.information_line-1 {
+  width: 920px;
+  padding-top: 44px;
+  padding-left: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.information_item {
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.information_text {
+  font-weight: 600;
+  font-size: 26px;
+  color: white;
+  text-align: center;
+}
+.information_name {
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+.information_line-2 {
+  margin-top: 70px;
+}
+
+.abonements_blocks {
+  width: 948px;
+  height: 204px;
+  margin-top: 66px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-left: 230px;
+}
+.abonements_blocks_value {
+  width: 308px;
+  height: 204px;
+  background-color: #151515;
+  border-radius: 69px;
+}
+.abonements_blocks_value-p {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+.abonements_blocks_value-h1 {
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.line_1_-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+}
+.line_1_-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.btn_admin {
+  width: 217px;
+  height: 54px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 69px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+}
+.btn_admin:hover {
+  background-color: white;
+  color: black;
+}
+
+.button {
+  width: 217px;
+  height: 54px;
+  background-color: #DA7143;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 69px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+.btn_balance {
+    width: 217px;
+    height: 54px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+  }
+  .btn_balance:hover {
+    background-color: white;
+    color: black;
+  }
+  .buttons {
+    width: 920px;
+    height: 54px;
+    margin-left: 95px;
+    margin-top: 40px;
+    margin-bottom: 47px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  h3 {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .balanceForm {
+    margin-top: 40px;
+  }
+  input {
+    width: 140px;
+    border-radius: 5px;
+  }
+  label {
+    color: white;
+  }
+  .button_balance {
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 30px;
+      width: 80%;
+      max-width: 300px;
+    }
+  
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    h3 {
+      margin-top: 30px;
+      text-align: center;
+      color: black;
+    }
+    .balanceForm {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    input {
+      width: 130px;
+      border-radius: 5px;
+    }
+    label {
+      color: #000000;
+      font-weight: 600;
+    }
+    .Myclose {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  
+    .Myclose:hover,
+    .Myclose:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .Mymodal {
+      display: none; 
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+    .appeal_btn {
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+      margin-left: 100px;
+    }
+    textarea {
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+/*# sourceMappingURL=useraccount.css.map */

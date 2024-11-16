@@ -1,0 +1,217 @@
+@import "../mixins/header.scss"; //Миксины для шапки профиля//
+@import "../mixins/contacts.scss"; //Миксины для раздела контактов//
+@import "../mixins/footer.scss"; //Миксины для подвала//
+@import "../mixins/modal.scss"; //Миксины для Модального окна//
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+$orange: #DA7143;
+$lightblack: #151515;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 1440px;
+  font: 100% "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 167px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+.header {
+    &_link {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        gap: 66px;
+        transition: all 0.3s;
+
+        &:hover {
+cursor: pointer;
+color: #DA7143;
+        }
+
+    }
+}
+//Стили для раздела с тарифами//
+.abonements {
+&_title {
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+    margin-top: 102px;
+}
+&_text {
+    width: 425px;
+    height: 58px;
+    margin-top:45px;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+}
+.abonements_blocks{
+    width: 1110px;
+    height: 493px;
+    margin-top: 146px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:63px;
+    margin-bottom: 87px;
+    &_value {
+        width: 328px;
+        height: 493px;
+        background-color:#151515;
+        border-radius: 69px;
+
+    }
+    &_value-p {
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+    }
+    &_value-h1 {
+        font-weight: 800;
+        font-size: 40px;
+        color: white;
+        text-align: center;
+    }
+    &_value-p-semibold {
+        font-weight: 800;
+        font-size: 20px;
+        color: white;
+    }
+} 
+.button {
+    width: 160px;
+    height: 57px;
+    background-color: #DA7143;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 69px;
+    margin-left: 84px;
+    margin-top: 97px;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+.line_1 {
+    &_-1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+    &_-2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 22px;
+    }
+    &_-3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 33px;
+    }
+    &_-4{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    &_-5 {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    &_-6 {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+}
+.btn {
+    &_year {
+        margin-top: 50px;
+    }
+    &_month {
+        margin-top: 108px;
+    }
+    &_lesson{
+        margin-top: 167px;
+    }
+}
+.line_2 {
+    &_-1{
+    margin-top:78px;
+    }
+    &_-2{
+        display: flex;
+        justify-content: center;
+        margin-top: 47px;
+    }
+}
+.footer {
+    &_networks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 45px;
+        cursor: pointer;
+    }
+}
+//Медиа-запросы для отображения на телефоне//
+@media all and (max-width: 440px) {
+    body {
+        width: 440px;  
+    }
+    .container {
+        padding-left:49px;
+        width: 440px;
+    }
+    .abonements {
+        &_title {
+            font-size: 20px;
+            font-weight: 800;
+            color: black;
+            margin-top: 66px;
+            width: 339px;
+            height: 48px;
+            text-align: center;
+        }
+        &_text {
+            width: 339px;
+            height: 40px;
+            margin-top:45px;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+        }
+        }
+        .abonements_blocks{
+            width: 335px;
+            height: 1641px;
+            margin-top: 66px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            gap:30px;
+            margin-bottom: 87px;
+            margin-left: 6px;
+}
+}

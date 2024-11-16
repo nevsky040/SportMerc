@@ -1,0 +1,333 @@
+@import "../mixins/header.scss"; //Миксины для шапки профиля//
+@import "../mixins/contacts.scss"; //Миксины для раздела контактов//
+@import "../mixins/footer.scss"; //Миксины для подвала//
+@import "../mixins/modal.scss"; //Миксины для Модального окна//
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+$orange: #DA7143;
+$lightblack: #151515;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 1440px;
+  font: 100% "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 167px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+.header {
+    &_link {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        gap: 66px;
+        transition: all 0.3s;
+
+        &:hover {
+cursor: pointer;
+color: #DA7143;
+        }
+
+    }
+}
+//Стили для раздела с историей клуба//
+.history {
+    &_h2 {
+         font-size: 40px;
+        font-weight: 800;
+        color: #000000;
+        margin-top: 102px;
+        margin-left: 388px;
+} 
+&_text {
+    width:1106px;
+    height: 384px;
+    margin-top: 106px;
+}
+&_text-p {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+&_span {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color:$orange;
+}
+}
+//Стили для раздела с фотографиями//
+.hall {
+    &_h2{
+        font-size: 40px;
+        font-weight: 800;
+        color: #000000;
+        text-decoration: underline solid 9px $orange;
+        margin-top: 186px;
+    }
+    &_album{
+        width: 1110px;
+        height: 649px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 58px;
+    }
+}
+//Стили для раздела с сертификатами//
+.awards {
+    &_h2{
+        font-size: 40px;
+        font-weight: 800;
+        color: #000000;
+        text-decoration: underline solid 9px $orange;
+        text-underline-offset: 10px;
+        margin-top: 140px;
+}
+&_album{
+    width: 1111px;
+    height: 794px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 58px;
+    margin-bottom: 139px;
+}
+}
+
+.contacts {
+    height: 524px;
+    background-color: $lightblack;
+    &_information {
+        width: 425px;
+        height: 242px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &_block {
+        width: 959px;
+        height: 242px;
+        padding-left: 71px;
+        padding-top: 309px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 128px;
+    }
+    &_title{
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &_adress {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+        color: #FFFFFF;
+        width: 396px;
+        height: 48px;
+    }
+    &_email {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &_phone {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: #FFFFFF;
+        width: 425px;
+        height: 29px;  
+    }
+    &_title-question {
+        font-size: 40px;
+        font-weight: 800;
+        color: #FFFFFF;
+        padding-top: 97px;
+        padding-left: 333px;
+    }
+    &_block {
+        padding-top: 67px;
+    }
+}
+.footer {
+    &_networks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 45px;
+        cursor: pointer;
+    }
+}
+//Медиа-запросы для отображения на телефоне//
+@media all and (max-width: 440px) {
+    body {
+        width: 440px;  
+    }
+    .container {
+        padding-left:49px;
+        width: 440px;
+    }
+    .history {
+        &_h2 {
+             font-size: 20px;
+            font-weight: 800;
+            color: #000000;
+            margin-top: 66px;
+            margin-left: 92px;
+    } 
+    &_text {
+        width:342px;
+        height: 287px;
+        margin-top: 67px;
+    }
+    &_text-p {
+        font-weight: 600;
+        font-size: 10px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    &_span {
+      font-weight: 800;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color:$orange;
+    }
+    }
+    .hall {
+        &_h2{
+            font-size: 20px;
+            font-weight: 800;
+            color: #000000;
+            text-decoration: underline solid 6px $orange;
+            margin-top: 140px;
+            margin-left: 125px;
+        }
+        &_album{
+            width: 217px;
+            height: 651px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 42px;
+            gap: 42px;
+            padding-left: 63px;
+        }
+        &_photo {
+            width:217px ;
+            height:131px ;
+        }
+    }
+    .awards {
+        &_h2{
+            font-size: 20px;
+            font-weight: 800;
+            color: #000000;
+            text-decoration: underline solid 6px $orange;
+            text-underline-offset: 5px;
+            margin-top: 42px;
+            margin-left: 90px;
+    }
+    &_album{
+        width: 217px;
+        height: 760px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 48px;
+        padding-left: 63px;
+        gap: 42px;
+    }
+    &_photo {
+        width: 217px;
+        height: 159px;
+    }
+    }
+    .contacts {
+        height: 338px;
+        background-color: $lightblack;
+        &_information {
+            width: 317px;
+            height: 217px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        &_block {
+            width: 317px;
+            height: 217px;
+            padding-left: 13px;
+            padding-top: 53px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+        }
+        &_title{
+            font-size: 20px;
+            font-weight: 800;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &_adress {
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            align-items: center;
+            color: #FFFFFF;
+            width: 317px;
+            height: 40px;
+        }
+        &_email {
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &_phone {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            color: #FFFFFF;
+            width: 213px;
+            height: 24px;  
+            padding-left: 50px;
+        }
+        &_title-question {
+            font-size: 20px;
+            font-weight: 800;
+            color: #FFFFFF;
+            padding-top: 39px;
+            padding-left: 61px;
+        }
+        &_block {
+            padding-top: 53px;
+        }
+    }
+}
